@@ -1,0 +1,52 @@
+Hi!
+This project is designed by me and is an example of simple BDD JUnit Framework.
+The project is not finished and it is my work in progress.
+I work on it in spare time when I am not applying for jobs. =)
+The purpose of project is to demostrate some of my skills.
+
+What's going on the project?
+- I give an example of simple test cases for UI and API
+
+What resourses do I used?
+Ikea website is used for UI
+Petstore is used for API
+
+How is it organized?
+- This simple Cuccumber BDD JUnit framework is designed solely by me and has the following structure:
+1. Page Object Models
+2. Runners Class
+3. Utilities Class with Singleton Design Pattern Driver class
+4. StepDefs Classes
+5. Resources with feature, pojo files and enviroments
+6. Configuration properties
+7. Log4J properties
+8. Pom.xlm
+
+How does it work?
+1. Feautre files are written in Gherkin
+2. When the test is triggered by TestRunner, Java code is run a from Step Definition file
+3. You can rerun failed files using FailedTestRunner class, that connects target rerun file with the Step Definition file
+4. Logs are also implemented in the project
+5. You can trigger a parallel run from Maven
+
+What does the file test in UI?
+- There are 2 test cases one is parametarized test senario and another one is Senario outline
+
+What does happen in API?
+- We create a JSON object, send it to API, verify it was posted and delete
+
+What else can we do with this framework?
+- Read data from txt file
+- I am currently working on CVS and Excel reader class
+
+What about Cucumber?
+- We run our tests with Cucumber class and we also use Hooks for set up @Before and @After test methods
+
+What about the Driver?
+- We have a parallel set up and Singleton Design pattern
+
+
+
+
+
+
