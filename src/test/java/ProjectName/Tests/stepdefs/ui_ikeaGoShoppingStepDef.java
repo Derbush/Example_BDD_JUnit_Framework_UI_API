@@ -15,7 +15,7 @@ import java.util.List;
 
 public class ui_ikeaGoShoppingStepDef extends TestBase {
 
-    WaitUtil waitUtil = new WaitUtil();
+    WaitUtil waitUtil;
     IkeaMainPage ikeaMainPage = new IkeaMainPage();
     IkeaGoShoppingPage ikeaGoShoppingPage = new IkeaGoShoppingPage();
 

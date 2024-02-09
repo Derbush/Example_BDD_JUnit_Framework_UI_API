@@ -11,7 +11,12 @@ import java.util.List;
 
 public class WaitUtil {
 
+ WebDriverWait wait;
 
+    public void waitForListBeNotEmpty(String locator, Integer time ){
+        wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(time));
+        wait.until(ExpectedConditions.visibilityOfAllElements(Driver.getDriver().findElements(By.xpath(locator))));
+    }
 
 
 }
